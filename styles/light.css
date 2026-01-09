@@ -13,7 +13,6 @@
     --bg-page-color: #FFF1F7;
     --text-color-title: #FFC2E6;
     --accent-color: #FF8DCB;
-    --accent-color-rgb: 50, 49, 45;
     --text-color-section-title: #353430;
     --color-button: #353430;
     --color-button-rgb: 53, 52, 48;
@@ -33,14 +32,22 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-       --bg-page: url('../images/cover-image-light.png');
+    --bg-page: url('../images/cover-image-light.png');
     --bg-page-color: #FFF1F7;
     --text-color-title: #FFC2E6;
     --accent-color: #FF8DCB;
-    --accent-color-rgb: 50, 49, 45;
+    --color-button: #353430;
+    --color-button-rgb: 53, 52, 48;
     --text-color-section-title: #353430;
-    --text-color-section-title-rgb: 53, 52, 48;
     --text-color-title-card: #353430;
     --main-text-color: #353430;
+  }
+
+  .decoration__element {
+    opacity: 0;
+  }
+
+  .decoration__element::after {
+    opacity: 0;
   }
 }
